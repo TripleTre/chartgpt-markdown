@@ -110,7 +110,7 @@
         return mdContent;
     }
 
-    var copyHtml = `<div id="__copy__" style="cursor:pointer;position: fixed;top: 20px;right: 20px;width: 60px;height: 60px;background: #8bc34a;/* border: 1px solid #8bc34a; */border-radius: 50%;color: white;display: flex;justify-content: center;align-items: center;"><span>copy</span></div>`;
+    var copyHtml = `<div id="__copy__" style="z-index:9999999;cursor:pointer;position: fixed;top: 20px;right: 20px;width: 60px;height: 60px;background: #8bc34a;/* border: 1px solid #8bc34a; */border-radius: 50%;color: white;display: flex;justify-content: center;align-items: center;"><span>copy</span></div>`;
     var copyElement = document.createElement("div");
     document.body.appendChild(copyElement);
     copyElement.outerHTML = copyHtml;
